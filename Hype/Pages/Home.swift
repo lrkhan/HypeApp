@@ -13,7 +13,8 @@ struct Home: View {
         VStack{
             TitleBarView()
             
-            // add big event card here
+            // add big event card here - figure out how to add scrolling function
+            
             
             ScrollView {
                 // Recomended Section
