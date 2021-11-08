@@ -24,34 +24,6 @@ struct NAVview: View {
                 Text("Profile")
             }.tag(3)
         }
-        
-        /*HStack {
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Image(systemName: "house.circle")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-            }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            
-            Spacer()
-            
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Image(systemName: "magnifyingglass.circle")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-            }
-            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-            
-            Spacer()
-            
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-            }
-            .padding(.all)
-        }
-        .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)*/
     }
 }
 

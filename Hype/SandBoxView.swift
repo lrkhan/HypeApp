@@ -10,13 +10,7 @@ import SwiftUI
 struct SandBoxView_swift: View {
     var body: some View {
         VStack{
-            TitleBarView()
-            SectionHeaderView()
-            SmallEventCardView()
-            HubIconView()
-            ButtonView()
-            TagView()
-            NAVview()
+            SectionHeaderView(sectionName: "testing")
         }
     }
 }

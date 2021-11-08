@@ -12,10 +12,6 @@ struct ButtonView: View {
     var body: some View {
         
         ZStack{
-            /*RoundedRectangle(cornerRadius: 10)
-             .padding(.horizontal)
-             .frame(height: 100.0)
-             .foregroundColor(Color(red: 0.973, green: 0.973, blue: 0.973))*/
             
             if buttonType == "Save"{
                 

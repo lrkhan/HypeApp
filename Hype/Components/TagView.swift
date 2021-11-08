@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TagView: View {
-    var tag = "#Magic"
+    var tag = "#magic"
     var image = "temp"
     var body: some View {
         HStack {
@@ -25,7 +25,7 @@ struct TagView: View {
                     Rectangle()
                         .frame(width: 177.0, height: 116.0)
                         .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        .opacity(/*@START_MENU_TOKEN@*/0.6/*@END_MENU_TOKEN@*/)
+                        .opacity(0.4)
                         .foregroundColor(Color.red)
                     
                     /*@START_MENU_TOKEN@*/Text(tag)

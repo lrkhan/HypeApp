@@ -9,23 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ScrollView {
-            VStack {
-                SectionHeaderView(sectionName: "Results")
-                SmallEventCardView()
-                ButtonView()
-                ButtonView(buttonType: "Share")
-                ButtonView(buttonType: "Remove")
-            }
-            VStack{
-                SectionHeaderView(sectionName: "Recomended")
-                SmallEventCardView()
-                SmallEventCardView()
-                SmallEventCardView()
-                SmallEventCardView()
-                SmallEventCardView()
-                
-            }
+        TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            Home().tabItem {
+                Image(systemName: "house.circle")
+                Text("Home")
+            }.tag(1)
+            Search().tabItem {
+                Image(systemName: "magnifyingglass.circle")
+                Text("Search")
+            }.tag(2)
+            Profile().tabItem {
+                Image(systemName: "person.circle")
+                Text("Profile")
+            }.tag(3)
         }
     }
 }
@@ -36,7 +32,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
         
         // dark mode view
-        ContentView()
-            .preferredColorScheme(.dark)
+        //ContentView()
+            //.preferredColorScheme(.dark)
     }
 }
