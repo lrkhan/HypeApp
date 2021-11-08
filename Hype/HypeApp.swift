@@ -2,7 +2,7 @@
 //  HypeApp.swift
 //  Hype
 //
-//  Created by Luthfor Khan on 11/4/21.
+//  Created by Luthfor Khan on 11/5/21.
 //
 
 import SwiftUI
@@ -13,5 +13,11 @@ struct HypeApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+struct HypeApp_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
