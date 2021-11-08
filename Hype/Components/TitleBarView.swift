@@ -22,12 +22,12 @@ struct TitleBarView: View {
             
             if titleName == "Home" {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                Image(systemName: "ellipsis.circle")
+                    Image(systemName: "ellipsis.circle")
+                        .resizable()
                         .foregroundColor(.black)
-                    .resizable()
-                    .frame(width: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .scaledToFit()
-                    .padding(.horizontal)
+                        .frame(width: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .scaledToFit()
+                        .padding(.horizontal)
                 }
             }
         }
