@@ -1,13 +1,13 @@
 //
-//  SandBoxView.swift.swift
+//  SaveShareView.swift
 //  Hype
 //
-//  Created by Luthfor Khan on 11/8/21.
+//  Created by Luthfor Khan on 11/9/21.
 //
 
 import SwiftUI
 
-struct SandBoxView_swift: View {
+struct SaveShareView: View {
     @State private var isSaved = false
     
     var body: some View {
@@ -40,8 +40,8 @@ struct SandBoxView_swift: View {
     }
 }
 
-struct SandBoxView_swift_Previews: PreviewProvider {
+struct SaveShareView_Previews: PreviewProvider {
     static var previews: some View {
-        SandBoxView_swift()
+        SaveShareView()
     }
 }

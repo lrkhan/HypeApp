@@ -27,6 +27,7 @@
 		985ED1F727355D86008A703E /* SmallEventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985ED1F627355D86008A703E /* SmallEventCardView.swift */; };
 		988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FB6DE2735751F008079EC /* SectionHeaderView.swift */; };
 		98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8261E273ABEE700ACA26E /* BigEventView.swift */; };
+		98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82620273ADB0E00ACA26E /* SaveShareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		985ED1F627355D86008A703E /* SmallEventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallEventCardView.swift; sourceTree = "<group>"; };
 		988FB6DE2735751F008079EC /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		98C8261E273ABEE700ACA26E /* BigEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigEventView.swift; sourceTree = "<group>"; };
+		98C82620273ADB0E00ACA26E /* SaveShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				985B3D4427395CC400DA0315 /* ButtonView.swift */,
 				985B3D422739599D00DA0315 /* HubIconView.swift */,
 				983C6CFF2739911D0028473E /* ProfileView.swift */,
+				98C82620273ADB0E00ACA26E /* SaveShareView.swift */,
 				985B3D502739834400DA0315 /* SearchBarView.swift */,
 				988FB6DE2735751F008079EC /* SectionHeaderView.swift */,
 				985ED1F627355D86008A703E /* SmallEventCardView.swift */,
@@ -218,6 +221,7 @@
 				985ED1F727355D86008A703E /* SmallEventCardView.swift in Sources */,
 				985B3D412739580700DA0315 /* TitleBarView.swift in Sources */,
 				988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */,
+				98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */,
 				985B3D512739834400DA0315 /* SearchBarView.swift in Sources */,
 				985B3D432739599D00DA0315 /* HubIconView.swift in Sources */,
 				98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */,
@@ -358,7 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hype/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TDL4PT97XP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -389,7 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hype/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TDL4PT97XP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

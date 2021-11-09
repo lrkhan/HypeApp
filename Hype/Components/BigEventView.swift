@@ -2,13 +2,14 @@
 //  BigEventView.swift
 //  Hype
 //
-//  Created by Luthfor Khan on 11/9/21.
+//  Created by Chris
+//  Edited by Luthfor Khan on 11/9/21.
 //
 
 import SwiftUI
 
 struct BigEventView: View {
-    var hubName: String = "Replay Cafes"
+    var hubName: String = "Replay Cafe"
     var eventSaves: Int = 123
     var image: String = "temp"
     
@@ -24,7 +25,7 @@ struct BigEventView: View {
                                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/))
             }
             Group{
-                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/)
+                RoundedRectangle(cornerRadius: 10)
                     .fill(Color.black)
                 
                     .padding(.all)
