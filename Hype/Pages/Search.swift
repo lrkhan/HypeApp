@@ -12,6 +12,8 @@ struct Search: View {
         VStack {
             TitleBarView(titleName: "Search")
             ScrollView {
+                SearchBarView()
+                
                 Group{
                     SectionHeaderView(sectionName: "Tags")
                     VStack{

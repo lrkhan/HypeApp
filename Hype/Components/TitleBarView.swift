@@ -24,7 +24,7 @@ struct TitleBarView: View {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     Image(systemName: "ellipsis.circle")
                         .resizable()
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("textColor"))
                         .frame(width: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                         .scaledToFit()
                         .padding(.horizontal)
@@ -39,5 +39,6 @@ struct TitleBarView: View {
 struct TitleBarView_Previews: PreviewProvider {
     static var previews: some View {
         TitleBarView()
+            .preferredColorScheme(.light)
     }
 }

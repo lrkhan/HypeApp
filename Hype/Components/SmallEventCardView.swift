@@ -19,7 +19,7 @@ struct SmallEventCardView: View {
             RoundedRectangle(cornerRadius: 10)
                 .padding(.horizontal)
                 .frame(height: 100.0)
-                .foregroundColor(Color(red: 0.973, green: 0.973, blue: 0.973))
+                .foregroundColor(Color("cardBG"))
             HStack(alignment: .center){
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                     VStack(alignment: .center){
@@ -27,10 +27,10 @@ struct SmallEventCardView: View {
                             .resizable()
                             .clipShape(Circle())
                             .frame(width: 60, height: 60)
-                            .overlay(Circle().stroke(Color(red: 0.238, green: 0.536, blue: 0.676), lineWidth: 1))
+                            .overlay(Circle().stroke(.red, lineWidth: 1))
                         Text(eventLocationName)
                             .font(.caption)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color("textColor"))
                     }
                     .frame(width: 90.0, height: 90.0)
                 }
@@ -39,16 +39,19 @@ struct SmallEventCardView: View {
                         HStack{
                             Text(eventName)
                                 .font(.headline)
+                                .foregroundColor(Color("textColor"))
                             Spacer()
                         }
                         
                         Text(eventDate)
                             .font(.subheadline)
+                            .foregroundColor(Color("textColor"))
                             .padding(.bottom, 1.0)
                         
                         HStack {
                             Text(eventInfo)
                                 .font(.caption)
+                                .foregroundColor(Color("textColor"))
                                 .multilineTextAlignment(.leading)
                                 .lineLimit(2)
                             Spacer()
@@ -68,6 +71,7 @@ struct SmallEventCardView: View {
 struct SmallEventCardView_Previews: PreviewProvider {
     static var previews: some View {
         SmallEventCardView()
+            
         
     }
 }

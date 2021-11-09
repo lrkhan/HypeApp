@@ -22,7 +22,7 @@ struct ProfileView: View {
                     .padding(.trailing)
                     .scaledToFit()
                     .frame(width: 30, height: 30)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("textColor"))
             }
             HStack{
                 ZStack {
@@ -30,9 +30,9 @@ struct ProfileView: View {
                         .resizable()
                         .clipShape(Circle())
                         .frame(width: 120, height: 120)
-                    .overlay(Circle().stroke(.white, lineWidth: 4))
+                        .overlay(Circle().stroke(Color.red, lineWidth: 2))
                     Image(systemName: "pencil.circle.fill")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color.white)
                         .overlay(Circle().stroke(.black,lineWidth: 2))
                         .offset(x: 35, y: 45)
                 }
@@ -42,6 +42,7 @@ struct ProfileView: View {
                 HStack {
                     Text(name)
                         .font(.headline)
+                        .foregroundColor(Color("textColor"))
                         .padding(.horizontal)
                     Spacer()
                 }
@@ -49,6 +50,7 @@ struct ProfileView: View {
                 HStack{
                     Text(location)
                         .font(.subheadline)
+                        .foregroundColor(Color("textColor"))
                         .padding(.horizontal)
                     Spacer()
                     Image(systemName: "gamecontroller")
@@ -63,5 +65,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
+            
+            
     }
 }

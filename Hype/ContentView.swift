@@ -32,7 +32,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
         
         // dark mode view
-        //ContentView()
-            //.preferredColorScheme(.dark)
+        ContentView()
+            .preferredColorScheme(.dark)
+            
     }
 }
