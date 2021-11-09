@@ -62,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983C6D07273A471F0028473E /* WIP */ = {
+			isa = PBXGroup;
+			children = (
+				985B3D462739670700DA0315 /* SandBoxView.swift */,
+			);
+			path = WIP;
+			sourceTree = "<group>";
+		};
 		985B3D52273984DF00DA0315 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +119,7 @@
 			children = (
 				985ED1E627355BA2008A703E /* HypeApp.swift */,
 				985ED1E827355BA2008A703E /* ContentView.swift */,
-				985B3D462739670700DA0315 /* SandBoxView.swift */,
+				983C6D07273A471F0028473E /* WIP */,
 				985B3D52273984DF00DA0315 /* Components */,
 				985B3D53273984F700DA0315 /* Pages */,
 				985ED1EA27355BA3008A703E /* Assets.xcassets */,
