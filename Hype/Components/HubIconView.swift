@@ -25,7 +25,7 @@ struct HubIconView: View {
                             .resizable()
                             .clipShape(Circle())
                             .frame(width: 70, height: 70)
-                            .overlay(Circle().stroke(.black, lineWidth: 1))
+                            .overlay(Circle().stroke(.red, lineWidth: 2))
                         Text(hubName)
                             .font(.footnote)
                             .foregroundColor(Color("textColor"))

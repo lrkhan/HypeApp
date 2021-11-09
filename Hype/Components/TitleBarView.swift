@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TitleBarView: View {
     var titleName: String = "Home"
+    @State private var settingSheet = false
     
     var body: some View {
         
@@ -21,7 +22,9 @@ struct TitleBarView: View {
             Spacer()
             
             if titleName == "Home" {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    settingSheet.toggle()
+                }) {
                     Image(systemName: "ellipsis.circle")
                         .resizable()
                         .foregroundColor(Color("textColor"))
@@ -29,6 +32,9 @@ struct TitleBarView: View {
                         .scaledToFit()
                         .padding(.horizontal)
                 }
+                .sheet(isPresented: $settingSheet) {
+                                        SettingsView()
+                                    }
             }
         }
         

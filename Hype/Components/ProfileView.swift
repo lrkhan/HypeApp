@@ -11,6 +11,7 @@ struct ProfileView: View {
     var name: String = "Abe"
     var location: String = "Detroit, MI"
     var profileImg: String = "temp"
+    @State private var showingSheet = false
     
     
     var body: some View {
@@ -53,8 +54,16 @@ struct ProfileView: View {
                         .foregroundColor(Color("textColor"))
                         .padding(.horizontal)
                     Spacer()
-                    Image(systemName: "gamecontroller")
-                        .padding(.trailing)
+                    Button(action: {
+                        showingSheet.toggle()
+                    }) {
+                        Image(systemName: "gamecontroller")
+                            .foregroundColor(Color("textColor"))
+                            .padding(.trailing)
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        BadgesView()
+                    }
                     
                 }
             }
@@ -65,7 +74,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
-            
-            
+        
+        
     }
 }
