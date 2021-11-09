@@ -34,6 +34,7 @@ struct ContentView_Previews: PreviewProvider {
         // dark mode view
         ContentView()
             .preferredColorScheme(.dark)
+.previewInterfaceOrientation(.portraitUpsideDown)
             
     }
 }

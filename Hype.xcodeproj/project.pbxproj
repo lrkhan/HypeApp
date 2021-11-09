@@ -65,6 +65,7 @@
 		983C6D07273A471F0028473E /* WIP */ = {
 			isa = PBXGroup;
 			children = (
+				983C6D05273A436E0028473E /* SettingsView.swift */,
 				985B3D462739670700DA0315 /* SandBoxView.swift */,
 			);
 			path = WIP;
@@ -80,7 +81,6 @@
 				983C6CFF2739911D0028473E /* ProfileView.swift */,
 				985B3D502739834400DA0315 /* SearchBarView.swift */,
 				988FB6DE2735751F008079EC /* SectionHeaderView.swift */,
-				983C6D05273A436E0028473E /* SettingsView.swift */,
 				985ED1F627355D86008A703E /* SmallEventCardView.swift */,
 				985B3D482739687E00DA0315 /* TagView.swift */,
 				985B3D402739580700DA0315 /* TitleBarView.swift */,
