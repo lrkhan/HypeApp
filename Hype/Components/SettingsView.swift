@@ -29,7 +29,7 @@ struct SettingsView: View {
                 Button(action: {
                     dismiss()
                 }) {
-                    Text("Save")
+                    Text("Save & Dismiss")
                         .foregroundColor(Color.red)
                 }
             }

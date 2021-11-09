@@ -73,17 +73,17 @@
 		985B3D52273984DF00DA0315 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				983C6D03273A3E510028473E /* Badges.swift */,
+				983C6D01273A3BD70028473E /* BadgesView.swift */,
+				985B3D4427395CC400DA0315 /* ButtonView.swift */,
+				985B3D422739599D00DA0315 /* HubIconView.swift */,
+				983C6CFF2739911D0028473E /* ProfileView.swift */,
 				985B3D502739834400DA0315 /* SearchBarView.swift */,
-				985B3D402739580700DA0315 /* TitleBarView.swift */,
 				988FB6DE2735751F008079EC /* SectionHeaderView.swift */,
+				983C6D05273A436E0028473E /* SettingsView.swift */,
 				985ED1F627355D86008A703E /* SmallEventCardView.swift */,
 				985B3D482739687E00DA0315 /* TagView.swift */,
-				985B3D422739599D00DA0315 /* HubIconView.swift */,
-				985B3D4427395CC400DA0315 /* ButtonView.swift */,
-				983C6CFF2739911D0028473E /* ProfileView.swift */,
-				983C6D01273A3BD70028473E /* BadgesView.swift */,
-				983C6D05273A436E0028473E /* SettingsView.swift */,
-				983C6D03273A3E510028473E /* Badges.swift */,
+				985B3D402739580700DA0315 /* TitleBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

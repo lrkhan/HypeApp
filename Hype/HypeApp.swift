@@ -18,6 +18,9 @@ struct HypeApp: App {
 
 struct HypeApp_Previews: PreviewProvider {
     static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+        Text("Hype")
+            .font(.largeTitle)
+            .fontWeight(.bold)
+            .foregroundColor(Color.red)
     }
 }
