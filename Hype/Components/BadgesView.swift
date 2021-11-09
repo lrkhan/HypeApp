@@ -17,17 +17,17 @@ struct BadgesView: View {
         ScrollView {
             VStack{
                 HStack{
-                    Badges()
-                    Badges()
-                    Badges()
+                    Badges(img: "fries", date: "11/1/2021")
+                    Badges(img: "coop")
+                    Badges(img: "finger1")
                 }
                 HStack{
-                    Badges()
-                    Badges()
-                    Badges()
+                    Badges(img: "hamburger")
+                    Badges(img: "numone")
+                    Badges(img: "pgreen")
                 }
                 HStack{
-                    Badges()
+                    Badges(img: "pgold")
                     Badges()
                     Badges()
                 }

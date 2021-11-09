@@ -26,6 +26,7 @@
 		985ED1EE27355BA3008A703E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 985ED1ED27355BA3008A703E /* Preview Assets.xcassets */; };
 		985ED1F727355D86008A703E /* SmallEventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985ED1F627355D86008A703E /* SmallEventCardView.swift */; };
 		988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FB6DE2735751F008079EC /* SectionHeaderView.swift */; };
+		98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8261E273ABEE700ACA26E /* BigEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		985ED1ED27355BA3008A703E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		985ED1F627355D86008A703E /* SmallEventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallEventCardView.swift; sourceTree = "<group>"; };
 		988FB6DE2735751F008079EC /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		98C8261E273ABEE700ACA26E /* BigEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			children = (
 				983C6D03273A3E510028473E /* Badges.swift */,
 				983C6D01273A3BD70028473E /* BadgesView.swift */,
+				98C8261E273ABEE700ACA26E /* BigEventView.swift */,
 				985B3D4427395CC400DA0315 /* ButtonView.swift */,
 				985B3D422739599D00DA0315 /* HubIconView.swift */,
 				983C6CFF2739911D0028473E /* ProfileView.swift */,
@@ -217,6 +220,7 @@
 				988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */,
 				985B3D512739834400DA0315 /* SearchBarView.swift in Sources */,
 				985B3D432739599D00DA0315 /* HubIconView.swift in Sources */,
+				98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */,
 				985B3D4D27396A3800DA0315 /* Search.swift in Sources */,
 				985B3D4527395CC400DA0315 /* ButtonView.swift in Sources */,
 				983C6D002739911D0028473E /* ProfileView.swift in Sources */,

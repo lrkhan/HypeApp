@@ -13,10 +13,10 @@ struct Home: View {
         VStack{
             TitleBarView()
             
-            // add big event card here - figure out how to add scrolling function
-            
-            
             ScrollView {
+                // add big event card here - figure out how to add scrolling function
+                BigEventView()
+                
                 // Recomended Section
                 Group{ SectionHeaderView(sectionName: "Recomended")
                     SmallEventCardView()
