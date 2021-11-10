@@ -35,7 +35,7 @@ struct ButtonView: View {
                 Circle()
                     .size(width: 100, height: 100)
                     .frame(width: 100, height: 100)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 
                 VStack{
                     Image(systemName: "square.and.arrow.up")

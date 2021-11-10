@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct HubIconView: View {
+    @State private var hubSheet = false
+    
     var hubName = "Replay Cafe"
     var image = "temp"
     var body: some View {
         HStack {
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+            Button(action: {
+                hubSheet.toggle()
+            }) {
                 ZStack{
+                    
                     Rectangle()
                         .frame(width: 177.0, height: 116.0)
                         .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
@@ -33,6 +38,9 @@ struct HubIconView: View {
                     
                 }
                 
+            }
+            .sheet(isPresented: $hubSheet) {
+                HubPageView(hubName: hubName, hubImage: image)
             }
         }
     }

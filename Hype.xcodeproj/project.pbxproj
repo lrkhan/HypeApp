@@ -28,6 +28,9 @@
 		988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FB6DE2735751F008079EC /* SectionHeaderView.swift */; };
 		98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C8261E273ABEE700ACA26E /* BigEventView.swift */; };
 		98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82620273ADB0E00ACA26E /* SaveShareView.swift */; };
+		98C82623273B561B00ACA26E /* HubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82622273B561B00ACA26E /* HubPage.swift */; };
+		98C82625273B5B0B00ACA26E /* HubPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82624273B5B0A00ACA26E /* HubPageView.swift */; };
+		98C82627273B796500ACA26E /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82626273B796500ACA26E /* EventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		988FB6DE2735751F008079EC /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 		98C8261E273ABEE700ACA26E /* BigEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigEventView.swift; sourceTree = "<group>"; };
 		98C82620273ADB0E00ACA26E /* SaveShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveShareView.swift; sourceTree = "<group>"; };
+		98C82622273B561B00ACA26E /* HubPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubPage.swift; sourceTree = "<group>"; };
+		98C82624273B5B0A00ACA26E /* HubPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubPageView.swift; sourceTree = "<group>"; };
+		98C82626273B796500ACA26E /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +75,8 @@
 		983C6D07273A471F0028473E /* WIP */ = {
 			isa = PBXGroup;
 			children = (
-				983C6D05273A436E0028473E /* SettingsView.swift */,
+				98C82622273B561B00ACA26E /* HubPage.swift */,
+				98C82626273B796500ACA26E /* EventView.swift */,
 				985B3D462739670700DA0315 /* SandBoxView.swift */,
 			);
 			path = WIP;
@@ -83,10 +90,12 @@
 				98C8261E273ABEE700ACA26E /* BigEventView.swift */,
 				985B3D4427395CC400DA0315 /* ButtonView.swift */,
 				985B3D422739599D00DA0315 /* HubIconView.swift */,
+				98C82624273B5B0A00ACA26E /* HubPageView.swift */,
 				983C6CFF2739911D0028473E /* ProfileView.swift */,
 				98C82620273ADB0E00ACA26E /* SaveShareView.swift */,
 				985B3D502739834400DA0315 /* SearchBarView.swift */,
 				988FB6DE2735751F008079EC /* SectionHeaderView.swift */,
+				983C6D05273A436E0028473E /* SettingsView.swift */,
 				985ED1F627355D86008A703E /* SmallEventCardView.swift */,
 				985B3D482739687E00DA0315 /* TagView.swift */,
 				985B3D402739580700DA0315 /* TitleBarView.swift */,
@@ -216,6 +225,7 @@
 				985ED1E727355BA2008A703E /* HypeApp.swift in Sources */,
 				985B3D492739687E00DA0315 /* TagView.swift in Sources */,
 				985B3D4F27396A5200DA0315 /* Profile.swift in Sources */,
+				98C82623273B561B00ACA26E /* HubPage.swift in Sources */,
 				985B3D4B27396A2A00DA0315 /* Home.swift in Sources */,
 				983C6D06273A436E0028473E /* SettingsView.swift in Sources */,
 				985ED1F727355D86008A703E /* SmallEventCardView.swift in Sources */,
@@ -224,10 +234,12 @@
 				98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */,
 				985B3D512739834400DA0315 /* SearchBarView.swift in Sources */,
 				985B3D432739599D00DA0315 /* HubIconView.swift in Sources */,
+				98C82627273B796500ACA26E /* EventView.swift in Sources */,
 				98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */,
 				985B3D4D27396A3800DA0315 /* Search.swift in Sources */,
 				985B3D4527395CC400DA0315 /* ButtonView.swift in Sources */,
 				983C6D002739911D0028473E /* ProfileView.swift in Sources */,
+				98C82625273B5B0B00ACA26E /* HubPageView.swift in Sources */,
 				983C6D04273A3E510028473E /* Badges.swift in Sources */,
 				983C6D02273A3BD70028473E /* BadgesView.swift in Sources */,
 				985B3D472739670700DA0315 /* SandBoxView.swift in Sources */,

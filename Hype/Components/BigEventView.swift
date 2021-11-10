@@ -12,10 +12,14 @@ struct BigEventView: View {
     var hubName: String = "Replay Cafe"
     var eventSaves: Int = 123
     var image: String = "temp"
+    @State private var hubSheet = false
+    @State private var eventSheet = false
     
     var body: some View {
         ZStack{
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+            Button(action: {
+                eventSheet.toggle()
+            }) {
                 RoundedRectangle(cornerRadius: 10)
                     .padding(.all)
                     .frame(width: /*@START_MENU_TOKEN@*/370.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/250.0/*@END_MENU_TOKEN@*/)
@@ -24,13 +28,19 @@ struct BigEventView: View {
                                 .resizable()
                                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/))
             }
+            .sheet(isPresented: $eventSheet) {
+                EventView(hubName: hubName, eventImage: image)
+            }
+            
             Group{
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.black)
                 
                     .padding(.all)
                 HStack{
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    Button(action: {
+                        hubSheet.toggle()
+                    }) {
                         VStack(alignment: .center){
                             Image(image)
                                 .resizable()
@@ -44,7 +54,13 @@ struct BigEventView: View {
                         .frame(width: 125.0, height: 130.0)
                         .offset(y: -30)
                     }
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                    .sheet(isPresented: $hubSheet) {
+                        HubPageView(hubName: hubName, hubImage: image)
+                    }
+                    
+                    Button(action: {
+                        eventSheet.toggle()
+                    }) {
                         VStack(alignment: .leading){
                             Text("Smash Sisters")
                                 .font(.headline)
@@ -67,6 +83,9 @@ struct BigEventView: View {
                         }
                         .foregroundColor(Color.white)
                         .padding(.horizontal)
+                    }
+                    .sheet(isPresented: $eventSheet) {
+                        EventView(hubName: hubName, eventImage: image)
                     }
                 }
             }

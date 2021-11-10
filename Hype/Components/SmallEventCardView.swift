@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SmallEventCardView: View {
+    @State private var hubSheet = false
+    @State private var eventSheet = false
+    
     var eventName: String = "Event Name"
     var eventDate: String = "MM/DD/YYY hh:mm ?m"
     var eventLocationName: String = "Replay Cafe"
@@ -21,7 +24,9 @@ struct SmallEventCardView: View {
                 .frame(height: 100.0)
                 .foregroundColor(Color("cardBG"))
             HStack(alignment: .center){
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {
+                    hubSheet.toggle()
+                }) {
                     VStack(alignment: .center){
                         Image(eventLcoationImage)
                             .resizable()
@@ -34,7 +39,13 @@ struct SmallEventCardView: View {
                     }
                     .frame(width: 90.0, height: 90.0)
                 }
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                .sheet(isPresented: $hubSheet) {
+                    HubPageView(hubName: eventLocationName, hubImage: eventLcoationImage)
+                }
+                
+                Button(action: {
+                    eventSheet.toggle()
+                }) {
                     VStack(alignment: .leading){
                         HStack{
                             Text(eventName)
@@ -61,6 +72,9 @@ struct SmallEventCardView: View {
                     }
                     .frame(width: 250, height: 85)
                 }
+                .sheet(isPresented: $eventSheet) {
+                    EventView(hubName: eventLocationName, eventImage: eventLcoationImage)
+                }
                 .foregroundColor(.black)
             }
             
@@ -71,7 +85,7 @@ struct SmallEventCardView: View {
 struct SmallEventCardView_Previews: PreviewProvider {
     static var previews: some View {
         SmallEventCardView()
-            
+        
         
     }
 }
