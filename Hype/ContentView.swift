@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
-            test().tabItem {
+            Home().tabItem {
                 Image(systemName: "house.circle")
                 Text("Home")
             }.tag(1)
