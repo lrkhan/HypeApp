@@ -92,6 +92,7 @@ struct EventView: View {
                     Group{
                         Text(eventInfo)
                             .font(.body)
+                            .foregroundColor(Color("textColor"))
                             .padding(.horizontal)
                         
                         

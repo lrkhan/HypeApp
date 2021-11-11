@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9806941A273BFD100068A961 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98069419273BFD100068A961 /* CarouselView.swift */; };
+		9806946C273C301F0068A961 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9806946B273C301F0068A961 /* test.swift */; };
 		983C6D002739911D0028473E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C6CFF2739911D0028473E /* ProfileView.swift */; };
 		983C6D02273A3BD70028473E /* BadgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C6D01273A3BD70028473E /* BadgesView.swift */; };
 		983C6D04273A3E510028473E /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983C6D03273A3E510028473E /* Badges.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98069419273BFD100068A961 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		9806946B273C301F0068A961 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		983C6CFF2739911D0028473E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		983C6D01273A3BD70028473E /* BadgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesView.swift; sourceTree = "<group>"; };
 		983C6D03273A3E510028473E /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 		983C6D07273A471F0028473E /* WIP */ = {
 			isa = PBXGroup;
 			children = (
+				98069419273BFD100068A961 /* CarouselView.swift */,
 				98C82622273B561B00ACA26E /* HubPage.swift */,
 				98C82626273B796500ACA26E /* EventView.swift */,
 				985B3D462739670700DA0315 /* SandBoxView.swift */,
@@ -134,6 +139,7 @@
 			children = (
 				985ED1E627355BA2008A703E /* HypeApp.swift */,
 				985ED1E827355BA2008A703E /* ContentView.swift */,
+				9806946B273C301F0068A961 /* test.swift */,
 				983C6D07273A471F0028473E /* WIP */,
 				985B3D52273984DF00DA0315 /* Components */,
 				985B3D53273984F700DA0315 /* Pages */,
@@ -234,6 +240,7 @@
 				98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */,
 				985B3D512739834400DA0315 /* SearchBarView.swift in Sources */,
 				985B3D432739599D00DA0315 /* HubIconView.swift in Sources */,
+				9806946C273C301F0068A961 /* test.swift in Sources */,
 				98C82627273B796500ACA26E /* EventView.swift in Sources */,
 				98C8261F273ABEE700ACA26E /* BigEventView.swift in Sources */,
 				985B3D4D27396A3800DA0315 /* Search.swift in Sources */,
@@ -243,6 +250,7 @@
 				983C6D04273A3E510028473E /* Badges.swift in Sources */,
 				983C6D02273A3BD70028473E /* BadgesView.swift in Sources */,
 				985B3D472739670700DA0315 /* SandBoxView.swift in Sources */,
+				9806941A273BFD100068A961 /* CarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

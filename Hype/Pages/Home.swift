@@ -19,7 +19,7 @@ struct Home: View {
                 
                 // Recomended Section
                 Group{ SectionHeaderView(sectionName: "Recomended")
-                    SmallEventCardView()
+                    SmallEventCardView( eventLocationName: "Replay Cafe", eventLcoationImage: "replay")
                     SmallEventCardView()
                     SmallEventCardView()
                     SmallEventCardView()
