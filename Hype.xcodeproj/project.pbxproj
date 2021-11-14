@@ -33,6 +33,7 @@
 		98C82623273B561B00ACA26E /* HubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82622273B561B00ACA26E /* HubPage.swift */; };
 		98C82625273B5B0B00ACA26E /* HubPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82624273B5B0A00ACA26E /* HubPageView.swift */; };
 		98C82627273B796500ACA26E /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C82626273B796500ACA26E /* EventView.swift */; };
+		98E68A82274190830088E843 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E68A81274190830088E843 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		98C82622273B561B00ACA26E /* HubPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubPage.swift; sourceTree = "<group>"; };
 		98C82624273B5B0A00ACA26E /* HubPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubPageView.swift; sourceTree = "<group>"; };
 		98C82626273B796500ACA26E /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		98E68A81274190830088E843 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				985ED1E627355BA2008A703E /* HypeApp.swift */,
 				985ED1E827355BA2008A703E /* ContentView.swift */,
 				9806946B273C301F0068A961 /* test.swift */,
+				98E68A83274199AA0088E843 /* Scripts */,
 				983C6D07273A471F0028473E /* WIP */,
 				985B3D52273984DF00DA0315 /* Components */,
 				985B3D53273984F700DA0315 /* Pages */,
@@ -155,6 +158,14 @@
 				985ED1ED27355BA3008A703E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98E68A83274199AA0088E843 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				98E68A81274190830088E843 /* Types.swift */,
+			);
+			path = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +246,7 @@
 				985B3D4B27396A2A00DA0315 /* Home.swift in Sources */,
 				983C6D06273A436E0028473E /* SettingsView.swift in Sources */,
 				985ED1F727355D86008A703E /* SmallEventCardView.swift in Sources */,
+				98E68A82274190830088E843 /* Types.swift in Sources */,
 				985B3D412739580700DA0315 /* TitleBarView.swift in Sources */,
 				988FB6DF2735751F008079EC /* SectionHeaderView.swift in Sources */,
 				98C82621273ADB0E00ACA26E /* SaveShareView.swift in Sources */,

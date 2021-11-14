@@ -60,7 +60,7 @@ struct EventView: View {
                                         .foregroundColor(Color.red)
                                     Text(hubAddress)
                                         .font(.footnote)
-                                        .foregroundColor(Color("textColor"))
+                                        
                                 }
                             }
                             HStack{

@@ -21,11 +21,11 @@ struct TitleBarView: View {
                 .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
             Spacer()
             
-            if titleName == "Home" {
+            if titleName == "Profile" {
                 Button(action: {
                     settingSheet.toggle()
                 }) {
-                    Image(systemName: "ellipsis.circle")
+                    Image(systemName: "gearshape.circle")
                         .resizable()
                         .foregroundColor(Color("textColor"))
                         .frame(width: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
@@ -33,8 +33,22 @@ struct TitleBarView: View {
                         .padding(.horizontal)
                 }
                 .sheet(isPresented: $settingSheet) {
-                                        SettingsView()
-                                    }
+                    SettingsView()
+                }
+            } else if titleName == "Search"  {
+                Button(action: {
+                    settingSheet.toggle()
+                }) {
+                    Image(systemName: "gearshape.circle")
+                        .resizable()
+                        .foregroundColor(Color("textColor"))
+                        .frame(width: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                        .scaledToFit()
+                        .padding(.horizontal)
+                }
+                .sheet(isPresented: $settingSheet) {
+                    SettingsView()
+                }
             }
         }
         
