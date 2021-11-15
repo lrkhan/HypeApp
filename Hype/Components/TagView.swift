@@ -25,13 +25,13 @@ struct TagView: View {
                     Rectangle()
                         .frame(width: 177.0, height: 116.0)
                         .cornerRadius(/*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
-                        .opacity(0.4)
+                        .opacity(0.6)
                         .foregroundColor(Color.red)
                     
-                    /*@START_MENU_TOKEN@*/Text(tag)
+                    Text(tag)
                         .font(.title)
                         .fontWeight(.heavy)
-                    .foregroundColor(Color.white)/*@END_MENU_TOKEN@*/}
+                    .foregroundColor(Color.white)}
                 
                 
             }

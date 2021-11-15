@@ -7,10 +7,18 @@
 
 import SwiftUI
 
+
 struct ProfileView: View {
-    var name: String = "Abe"
-    var location: String = "Detroit, MI"
-    var profileImg: String = "temp"
+    var name: String
+    var location: String
+    var profileImg: String
+    
+    init (Profile userProfile: profile) {
+        self.name = userProfile.name
+        self.location = userProfile.location
+        self.profileImg = userProfile.profileImg
+    }
+    
     @State private var showingSheet = false
     
     
@@ -18,12 +26,16 @@ struct ProfileView: View {
         VStack{
             HStack{
                 Spacer()
-                Image(systemName: "square.and.arrow.up")
-                    .resizable()
-                    .padding(.trailing)
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(Color("textColor"))
+                Button(action: {
+                    showingSheet.toggle()
+                }) {
+                    Image(systemName: "square.and.arrow.up")
+                        .resizable()
+                        .padding(.trailing)
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(Color("textColor"))
+                }
             }
             HStack{
                 ZStack {
@@ -73,7 +85,9 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        let tempUser = profile()
+        
+        ProfileView(Profile: tempUser)
         
         
     }

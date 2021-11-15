@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct Profile: View {
+    let user = profile()
+    
     var body: some View {
         VStack{
             TitleBarView(titleName: "Profile")
             ScrollView {
-                ProfileView()
+                ProfileView(Profile: user)
                     
                 
                 Group{
                     SectionHeaderView(sectionName: "My Event List")
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()
+                    ForEach(savedEvent, id: \.self) {key in
+                        SmallEventCardView(eventData: key)
+                    }
                 }
                 
                 
                 Group{
                     SectionHeaderView(sectionName: "Past Event List")
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()
+                    ForEach(pastEvent, id: \.self) {key in
+                        SmallEventCardView(eventData: key)
+                    }
                 }
             }
         }

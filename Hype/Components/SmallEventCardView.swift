@@ -16,6 +16,18 @@ struct SmallEventCardView: View {
     var eventLocationName: String = "Replay Cafe"
     var eventInfo: String = "smaple event information some more informaiton kjlkjlkj kljlkj jkllkjlk lkjlkj sdf sdf sdf dfwe "
     var eventLcoationImage: String = "temp"
+    var eventHub: hubType
+    var eventData: eventType
+    
+    init(eventData event: eventType) {
+        self.eventData = event
+        self.eventHub = event.hubData
+        self.eventName = event.name
+        self.eventDate = event.date + " " + event.time
+        self.eventLocationName = event.hubName
+        self.eventLcoationImage = event.hubImage
+        self.eventInfo = event.info
+    }
     
     var body: some View {
         ZStack{
@@ -40,7 +52,7 @@ struct SmallEventCardView: View {
                     .frame(width: 90.0, height: 90.0)
                 }
                 .sheet(isPresented: $hubSheet) {
-                    HubPageView(hubName: eventLocationName, hubImage: eventLcoationImage)
+                    HubPageView(hubName: eventHub)
                 }
                 
                 Button(action: {
@@ -73,7 +85,7 @@ struct SmallEventCardView: View {
                     .frame(width: 250, height: 85)
                 }
                 .sheet(isPresented: $eventSheet) {
-                    EventView(hubName: eventLocationName, eventImage: eventLcoationImage)
+                    EventView(eventData: eventData)
                 }
                 .foregroundColor(.black)
             }
@@ -84,7 +96,10 @@ struct SmallEventCardView: View {
 
 struct SmallEventCardView_Previews: PreviewProvider {
     static var previews: some View {
-        SmallEventCardView()
+        let hub = hubType()
+        let evnt = eventType(eventHub: hub)
+        
+        SmallEventCardView(eventData: evnt)
         
         
     }

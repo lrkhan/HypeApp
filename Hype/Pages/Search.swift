@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct Search: View {
+    let columns = [
+        GridItem(.flexible()), GridItem(.flexible())
+        ]
+    
+    let tags = ["#dnd", "#newbie", "#smash", "#magic"]
+    let tagImgs = ["dnd", "new", "smash", "magic"]
+    
     var body: some View {
         VStack {
             TitleBarView(titleName: "Search")
@@ -17,37 +24,27 @@ struct Search: View {
                 Group{
                     SectionHeaderView(sectionName: "Tags")
                     VStack{
-                        HStack{
-                            TagView(tag: "#dnd")
-                            TagView(tag: "#newbie")
+                        LazyVGrid(columns: columns, spacing: 8) {
+                            ForEach((0...3), id: \.self) {i in
+                                TagView(tag: tags[i], image: tagImgs[i])
+                                    
+                            }
                         }
-                        HStack{
-                            TagView(tag: "#smash")
-                            TagView()
-                        }
-                        
+                        .padding(.horizontal)
                     }
                 }
                 
                 Group{
                     SectionHeaderView(sectionName: "Hubs")
+                    
                     VStack{
-                        HStack{
-                            HubIconView()
-                            HubIconView()
+                        LazyVGrid(columns: columns, spacing: 8) {
+                            ForEach(hubList, id: \.self) {key in
+                                HubIconView(hubName: key)
+                                    
+                            }
                         }
-                        HStack{
-                            HubIconView()
-                            HubIconView()
-                        }
-                        HStack{
-                            HubIconView()
-                            HubIconView()
-                        }
-                        HStack{
-                            HubIconView()
-                            HubIconView()
-                        }
+                        .padding(.horizontal)
                     }
                 }
             }

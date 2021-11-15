@@ -9,28 +9,25 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        
         VStack{
             TitleBarView()
             
             ScrollView {
                 // add big event card here - figure out how to add scrolling function
-                BigEventView()
+                CarouselView()
                 
                 // Recomended Section
                 Group{ SectionHeaderView(sectionName: "Recomended")
-                    SmallEventCardView( eventLocationName: "Replay Cafe", eventLcoationImage: "replay")
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()}
+                    ForEach((0...5), id: \.self) {key in
+                        SmallEventCardView(eventData: eventList[key])
+                    }
+                }
                 
                 // My Events Section
                 Group { SectionHeaderView(sectionName: "My Events")
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()
-                    SmallEventCardView()
+                    ForEach(savedEvent, id: \.self) {key in
+                        SmallEventCardView(eventData: key)
+                    }
                 }
             }
         }

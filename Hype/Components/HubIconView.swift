@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct HubIconView: View {
-    @State private var hubSheet = false
+    @State private var eventSheet = false
     
-    var hubName = "Replay Cafe"
-    var image = "temp"
+    var hubName: String
+    var image: String
+    var eventHub: hubType
+    
+    init (hubName hub: hubType){
+        self.eventHub = hub
+        self.hubName = hub.name
+        self.image = hub.image
+    }
+    
     var body: some View {
         HStack {
             
             Button(action: {
-                hubSheet.toggle()
+                eventSheet.toggle()
             }) {
                 ZStack{
                     
@@ -39,8 +47,8 @@ struct HubIconView: View {
                 }
                 
             }
-            .sheet(isPresented: $hubSheet) {
-                HubPageView(hubName: hubName, hubImage: image)
+            .sheet(isPresented: $eventSheet) {
+                HubListView(hubName: eventHub)
             }
         }
     }
@@ -48,6 +56,8 @@ struct HubIconView: View {
 
 struct HubIconView_Previews: PreviewProvider {
     static var previews: some View {
-        HubIconView()
+        let place = replay
+        
+        HubIconView(hubName: place)
     }
 }

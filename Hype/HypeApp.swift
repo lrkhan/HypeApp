@@ -13,7 +13,10 @@ struct HypeApp: App {
         WindowGroup {
             ContentView()
         }
+        
     }
+    // adjusting mock event data
+    
 }
 
 struct HypeApp_Previews: PreviewProvider {

@@ -9,11 +9,28 @@
 import SwiftUI
 
 struct BigEventView: View {
-    var hubName: String = "Replay Cafe"
-    var eventSaves: Int = 123
-    var image: String = "temp"
+    var eventData: eventType
+    var hubName: String
+    var eventName: String
+    var eventDate: String
+    var eventTime: String
+    var eventSaves: Int
+    var image: String
+    var hubImg: String
+    
     @State private var hubSheet = false
     @State private var eventSheet = false
+    
+    init(eventName event: eventType) {
+        self.eventData = event
+        self.hubName = event.hubName
+        self.hubImg = event.hubImage
+        self.eventName = event.name
+        self.eventDate = event.date
+        self.eventTime = event.time
+        self.eventSaves = event.saves
+        self.image = event.bigImg
+    }
     
     var body: some View {
         ZStack{
@@ -29,20 +46,21 @@ struct BigEventView: View {
                                 .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/))
             }
             .sheet(isPresented: $eventSheet) {
-                EventView(hubName: hubName, eventImage: image)
+                EventView(eventData: eventData)
             }
             
             Group{
                 RoundedRectangle(cornerRadius: 10)
                     .fill(Color.black)
-                
+                    .frame(width: 370.0, height: 106.0)
+                    .opacity(0.7)
                     .padding(.all)
                 HStack{
                     Button(action: {
                         hubSheet.toggle()
                     }) {
                         VStack(alignment: .center){
-                            Image(image)
+                            Image(hubImg)
                                 .resizable()
                                 .clipShape(Circle())
                                 .frame(width: 100, height: 100)
@@ -55,21 +73,21 @@ struct BigEventView: View {
                         .offset(y: -30)
                     }
                     .sheet(isPresented: $hubSheet) {
-                        HubPageView(hubName: hubName, hubImage: image)
+                        HubPageView(hubName: eventData.hubData)
                     }
                     
                     Button(action: {
                         eventSheet.toggle()
                     }) {
                         VStack(alignment: .leading){
-                            Text("Smash Sisters")
+                            Text(eventName)
                                 .font(.headline)
                                 .foregroundColor(Color.white)
                                 .padding(.top)
-                            Text("November 19th, 2021")
+                            Text(eventDate)
                                 .font(.subheadline)
                                 .foregroundColor(Color.white)
-                            Text("7:00pm - 10:00pm")
+                            Text(eventTime)
                                 .font(.subheadline)
                             Spacer()
                         }
@@ -85,19 +103,21 @@ struct BigEventView: View {
                         .padding(.horizontal)
                     }
                     .sheet(isPresented: $eventSheet) {
-                        EventView(hubName: hubName, eventImage: image)
+                        EventView(eventData: eventData)
                     }
                 }
             }
             .frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/142.0/*@END_MENU_TOKEN@*/)
             .offset(x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/72.0/*@END_MENU_TOKEN@*/)
-            .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
         }
     }
 }
 
 struct BigEventView_Previews: PreviewProvider {
     static var previews: some View {
-        BigEventView()
+        let hub = hubType()
+        let evnt = eventType(eventHub: hub)
+        
+        BigEventView(eventName: evnt)
     }
 }

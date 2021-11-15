@@ -11,13 +11,23 @@ import UIKit
 struct HubPageView: View {
     @Environment(\.dismiss) var dismiss
     
-    var hubName: String = "Replay Cafe"
-    var hubImage: String = "temp"
-    var hubAddress: String = "6545 AntoineSt, Detroit, MI 48202"
-    var hubPhone: String = "(313) 444-4444"
-    var hubSite: String = "https://www.replaycafedetroit.com"
-    var hubAccessibility: String = "Wheelchair friendly"
-    var hubInfo: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    var hubName: String
+    var hubImage: String
+    var hubAddress: String
+    var hubPhone: String
+    var hubSite: String
+    var hubAccessibility: String
+    var hubInfo: String
+    
+    init (hubName hub: hubType){
+        self.hubName = hub.name
+        self.hubImage = hub.image
+        self.hubAddress = hub.location
+        self.hubPhone = hub.phone
+        self.hubSite = hub.site
+        self.hubAccessibility = hub.accessibility
+        self.hubInfo = hub.info
+    }
     
     var body: some View {
         VStack {
@@ -60,7 +70,7 @@ struct HubPageView: View {
                                         .foregroundColor(Color.red)
                                     Text(hubAddress)
                                         .font(.footnote)
-                                        .foregroundColor(Color("textColor"))
+                                        
                                 }
                             }
                             HStack{
@@ -104,6 +114,9 @@ struct HubPageView: View {
 
 struct HubPageView_Previews: PreviewProvider {
     static var previews: some View {
-        HubPageView()
+        //let place = hubType()
+        
+        HubPageView(hubName: gamersGauntlet)
+        
     }
 }
