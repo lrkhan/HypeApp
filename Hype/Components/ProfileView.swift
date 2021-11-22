@@ -23,11 +23,14 @@ struct ProfileView: View {
     
     
     var body: some View {
+        let hubSite = ["Check out my Profile on Hype: \(name)"]
+        let ac = UIActivityViewController(activityItems: hubSite, applicationActivities: nil)
+        
         VStack{
             HStack{
                 Spacer()
                 Button(action: {
-                    showingSheet.toggle()
+                    UIApplication.shared.keyWindow?.rootViewController?.present(ac, animated: true)
                 }) {
                     Image(systemName: "square.and.arrow.up")
                         .resizable()

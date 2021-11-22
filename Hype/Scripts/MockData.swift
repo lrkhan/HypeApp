@@ -9,7 +9,7 @@ import Foundation
 
 
 // Hubs
-var replay: hubType = hubType(name: "Replay Cafe", location: "6545 St Antoine, Detroit, MI 48202", image: "replay", phone: "(313) 806-0579", site: "https://replaycafedetroit.com/", accessibility: "PC, consoles, arcade machines avalible", info: """
+var replay: hubType = hubType(name: "Replay Cafe", location: "6545 St Antoine, Detroit, MI 48202", image: "replay", phone: "(313) 806-0579", site: "https://replaycafedetroit.com/", accessibility: "PC, consoles, arcade machines available", info: """
 Detroit’s Gaming Haven, the ultimate combination of lounge and arena for gamers of every level.
 
 Hosting 32 Alienware PCs, consoles ranging from NES to Next Gen. and a library of over 100 board games.
@@ -43,7 +43,7 @@ Family owned & operated comic specialty shop in Dearborn for 35 years. Offering 
 
 var gateKeeper: hubType = hubType(name: "Gate Keeper Games", location: "3961 Twelve Mile Rd, Berkley, MI 48072", image: "gate_keeper", phone: "(248) 439-0787", site: "https://www.gatekeepergaming.com/", accessibility: "Community Events, Wheelchair Friendly", info: "Your local, friendly game store!")
 
-var eternalGames: hubType = hubType(name: "Eternal Games", location: "26051 Hoover Rd, Warren, MI 48089", image: "EternalGames", phone: "(586) 684-4263", site: "https://eternalgamesllc.com/", accessibility: "Wheelchair Friendly, Comunity Events", info: """
+var eternalGames: hubType = hubType(name: "Eternal Games", location: "26051 Hoover Rd, Warren, MI 48089", image: "EternalGames", phone: "(586) 684-4263", site: "https://eternalgamesllc.com/", accessibility: "Wheelchair Friendly, Community Events", info: """
  Our Mission Statement:
 
 To serve as an institution of positive interaction and belonging to all who enter. To instill a sense of community for gaming culture for those local and passing through. To be a beacon of fun and entertainment for those looking to escape the world out there for an evening. To be a sure source of everything gaming to the Metro-Detroit area.

@@ -18,9 +18,9 @@ struct hubType: Hashable {
 }
 
 struct profile {
-    var name: String = "[Profile Name]"
-    var location: String = "[Locaiton]"
-    var profileImg: String = "temp"
+    var name: String = "Abe"
+    var location: String = "Detroit, MI"
+    var profileImg: String = "abe"
 }
 
 struct eventType: Hashable {

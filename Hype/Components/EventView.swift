@@ -119,7 +119,7 @@ struct EventView: View {
                 }
                 
             }
-            SaveShareView()
+            SaveShareView(hubevent: thisEvnt)
                 .padding(.vertical)
         }
     }
