@@ -13,3 +13,4 @@ Final Presentation: https://youtu.be/lVgC9CmrtqE
 
 ## Multi-Screen View
 <img src="./Hype%20Mock%20up%20and%20presentation/multiScreens.png" width="500" alt="Add Options Sheet">
+<img src="./Hype%20Mock%20up%20and%20presentation/multiScreens.png" alt="Add Options Sheet">
